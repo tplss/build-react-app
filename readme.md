@@ -1,28 +1,18 @@
-<p align="center">
-  <a href="https://ci.appveyor.com/api/projects/status/v562l6v4h098dvtf?svg=true">
-    <img src="https://ci.appveyor.com/api/projects/status/v562l6v4h098dvtf?svg=true"
-         alt="build status">
-  </a>
-  <a href="https://david-dm.org/tplss/node">
-    <img src="https://david-dm.org/tplss/node/status.svg"
-         alt="dependency status">
-  </a>
-</p>
 
-# node
+# build-react-app
 
-> a Node.js boilerplate repo, with some useful deps.
+> one command to build react app(like create-react-app)
 
 ## Usage
 
 ```bash
-$ npm install -g degit
-$ degit tplss/node
+$ npm install @Aladdin-ADD/build-react-app -g
+$ cd /path/to/your-react-app
+$ build-react-app --env production
 ```
 
 ## Features
 
-+ eslint (eslint-config-ts)
-+ husky
-+ mocha
-+ MIT license
++ ES6+ (+stage-3)
++ jsx
++ sass
