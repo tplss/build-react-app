@@ -1,12 +1,12 @@
 
 # build-react-app
 
-> one command to build react app(like create-react-app)
+> one command to build react app (just like create-react-app)
 
 ## Install
 
 ```bash
-$ npm install @Aladdin-ADD/build-react-app -g
+$ npm install tplss/build-react-app -g
 ```
 
 ## Usage
@@ -17,17 +17,15 @@ $ build-react-app --env production
 
 ## Configure
 
-being as the same as webpack:
+being as the same as webpack, add a `webpack.config.js`:
 
 ```js
-
 const webpackConfig = require('build-react-app');
 const merge = require('webpack-merge');
 
 module.exports = merge(webpackConfig, {
   // todo: fill your own config
 });
-
 ```
 
 
