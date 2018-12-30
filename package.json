@@ -1,8 +1,8 @@
 {
-  "name": "@aladdin-add/build-react-app",
+  "name": "@tplss/build-react-app",
   "version": "0.0.0",
-  "author": "薛定谔的猫 <hh_2013@foxmail.com>",
-  "description": "Node.js boilerplate",
+  "author": "薛定谔的猫 <weiran.zsd@outlook.com>",
+  "description": "just one command to build react app.",
   "main": "./lib/index.js",
   "bin": {
     "build-react-app": "bin/webpack.js"
