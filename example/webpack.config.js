@@ -1,7 +1,17 @@
-'use strict';
-const webpackConfig = require('build-react-app');
-const merge = require('webpack-merge');
 
-module.exports = merge(webpackConfig, {
-  // todo: fill your own config
-});
+  'use strict';
+  const webpackConfig = require('build-react-app');
+  const merge = require('webpack-merge');
+
+  module.exports = mode => {
+    if (mode === 'development') {
+      return merge(webpackConfig(mode), {
+        // todo: fill your own config for development
+      });
+    }
+
+    return merge(webpackConfig(mode), {
+      // todo: fill your own config for production
+    });
+  };
+  
