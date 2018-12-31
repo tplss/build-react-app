@@ -16,7 +16,8 @@
     "README.md",
     "bin",
     "index.js",
-    "webpack.config.js"
+    "webpack.config.js",
+    "output-config.js"
   ],
   "dependencies": {
     "@sucrase/webpack-loader": "^2.0.0",
