@@ -13,7 +13,7 @@
   },
   "files": [
     "LICENSE",
-    "README.md",
+    "readme.md",
     "bin",
     "conf",
     "index.js",
