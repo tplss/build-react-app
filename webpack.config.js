@@ -55,7 +55,7 @@ exports.developmentConfig = () => ({
       // Define development specific CSS setup
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ],
+        use: [ 'style-loader', 'css-loader', 'sass-loader' ],
       },
     ],
   },
