@@ -1,6 +1,6 @@
 
 'use strict';
-const webpackConfig = require('build-react-app');
+const webpackConfig = require('../index');
 const merge = require('webpack-merge');
 
 module.exports = mode => {

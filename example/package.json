@@ -4,8 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "build": "build-react-app --env production",
-    "test": "npm i && node ../webpack.js --env production"
+    "build": "npm i && node ../bin/webpack.js --env production"
   },
   "keywords": [],
   "author": "",
