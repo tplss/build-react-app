@@ -3,6 +3,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const babelConfig = require('./babelrc');
 
 exports.commonConfig = PATHS => ({
   entry: PATHS.app,
@@ -19,13 +20,7 @@ exports.commonConfig = PATHS => ({
         test: /\.(js|jsx)$/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: [
-              '@babel/preset-env',
-              '@babel/preset-react',
-              '@babel/preset-stage-3',
-            ],
-          },
+          options: babelConfig,
         },
         include: PATHS.app,
       },

@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const { commonConfig, developmentConfig, productionConfig } = require('./webpack.config');
+const { commonConfig, developmentConfig, productionConfig } = require('./conf/webpack.config');
 const merge = require('webpack-merge');
 const cwd = process.cwd();
 
