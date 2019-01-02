@@ -17,10 +17,17 @@ exports.commonConfig = PATHS => ({
     rules: [
       {
         test: /\.(js|jsx)$/,
-        loader: '@sucrase/webpack-loader',
-        options: {
-          transforms: [ 'jsx' ],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
+              '@babel/preset-stage-3',
+            ],
+          },
         },
+        include: PATHS.app,
       },
     ],
   },
