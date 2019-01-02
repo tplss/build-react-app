@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "build-react-app --env production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm i && node ../webpack.js --env production"
   },
   "keywords": [],
   "author": "",

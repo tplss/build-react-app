@@ -9,7 +9,7 @@
   },
   "scripts": {
     "lint": "eslint bin/*.js *.js",
-    "test": "node index.js"
+    "test": "cd example && npm run build"
   },
   "files": [
     "LICENSE",
