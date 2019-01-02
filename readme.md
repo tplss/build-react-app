@@ -17,7 +17,7 @@ $ build-react-app --env production
 
 ## Configure
 
-being as the same as webpack, add a `webpack.config.js`:
+just like webpack, add a `webpack.config.js`:
 
 ```js
   'use strict';
