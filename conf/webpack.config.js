@@ -1,5 +1,6 @@
 'use strict';
 
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -27,7 +28,10 @@ exports.commonConfig = PATHS => ({
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({}),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: path.join(__dirname, './index.html'),
+    }),
   ],
 });
 
