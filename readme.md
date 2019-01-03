@@ -1,12 +1,12 @@
 
-# build-react-app
+# @tplss/build-react-app
 
 > one command to build react app (just like create-react-app)
 
 ## Install
 
 ```bash
-$ npm install tplss/build-react-app -g
+$ npm install @tplss/build-react-app -g
 ```
 
 ## Usage
