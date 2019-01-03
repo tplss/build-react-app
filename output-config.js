@@ -12,7 +12,7 @@ if (!hasConfig) {
   console.log('no webpack config found, we will create a new one for you!\n');
   const cfg = `
   'use strict';
-  const webpackConfig = require('build-react-app');
+  const webpackConfig = require('@tplss/build-react-app');
   const merge = require('webpack-merge');
 
   module.exports = mode => {
