@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const { commonConfig, developmentConfig, productionConfig } = require('./conf/webpack.config');
+const config = require('./conf/webpack.config');
 const merge = require('webpack-merge');
 const cwd = process.cwd();
 
@@ -12,15 +12,13 @@ if (!pkg.main) {
   console.log('no pkg.main found, please add a entry in your webpack config!');
 }
 
-const PATHS = {
-  app: resolve(pkg.main), // input
-  build: resolve('dist'), // output
-};
+// const PATHS = {
+//   app: resolve(pkg.main), // input
+//   build: resolve('dist'), // output
+// };
 
-module.exports = mode => {
-  if (mode === 'development') {
-    return merge(commonConfig(PATHS), developmentConfig(PATHS), { mode });
-  }
-
-  return merge(commonConfig(PATHS), productionConfig(PATHS), { mode });
-};
+module.exports = merge(config, {
+  entry: {
+    main: resolve(pkg.main),
+  },
+});
