@@ -12,20 +12,13 @@ if (!hasConfig) {
   console.log('no webpack config found, we will create a new one for you!\n');
   const cfg = `
   'use strict';
-  const webpackConfig = require('@tplss/build-react-app');
-  const merge = require('webpack-merge');
 
-  module.exports = mode => {
-    if (mode === 'development') {
-      return merge(webpackConfig(mode), {
-        // todo: fill your own config for development
-      });
-    }
-
-    return merge(webpackConfig(mode), {
-      // todo: fill your own config for production
-    });
+  const CommonConfigWebpackPlugin = require('common-config-webpack-plugin');
+  module.exports = {
+    plugins: [ new CommonConfigWebpackPlugin() ],
   };
+
+
   `;
   fs.writeFileSync(resolve('webpack.config.js'), cfg, 'utf-8');
 }

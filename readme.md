@@ -12,7 +12,7 @@ $ npm install @tplss/build-react-app -g
 ## Usage
 ```bash
 $ cd /path/to/your-react-app
-$ build-react-app --env production
+$ build-react-app
 ```
 
 ## Configure
@@ -20,21 +20,12 @@ $ build-react-app --env production
 just like webpack, add a `webpack.config.js`:
 
 ```js
-  'use strict';
-  const webpackConfig = require('build-react-app');
-  const merge = require('webpack-merge');
+'use strict';
 
-  module.exports = mode => {
-    if (mode === 'development') {
-      return merge(webpackConfig(mode), {
-        // todo: fill your own config for development
-      });
-    }
-
-    return merge(webpackConfig(mode), {
-      // todo: fill your own config for production
-    });
-  };
+const CommonConfigWebpackPlugin = require('common-config-webpack-plugin');
+module.exports = {
+  plugins: [ new CommonConfigWebpackPlugin() ],
+};
 ```
 
 

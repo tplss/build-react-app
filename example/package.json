@@ -15,6 +15,6 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "@tplss/build-react-app": "https://github.com/tplss/build-react-app"
+    "@tplss/build-react-app": "file:///../"
   }
 }
