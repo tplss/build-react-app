@@ -1,6 +1,6 @@
 {
   "name": "@tplss/build-react-app",
-  "version": "0.1.0-0",
+  "version": "0.1.1-0",
   "author": "薛定谔的猫 <weiran.zsd@outlook.com>",
   "description": "just one command to build react app.",
   "main": "./conf/webpack.config.js",
