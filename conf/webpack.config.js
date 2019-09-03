@@ -1,10 +1,8 @@
 'use strict';
 
 const CommonConfigWebpackPlugin = require('common-config-webpack-plugin');
-module.exports = function(env) {
-  return {
-    mode: env,
-    plugins: [ new CommonConfigWebpackPlugin() ],
-  };
+module.exports = {
+  mode: 'production',
+  plugins: [ new CommonConfigWebpackPlugin() ],
 };
 

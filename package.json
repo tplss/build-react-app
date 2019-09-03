@@ -3,21 +3,19 @@
   "version": "0.1.0-0",
   "author": "薛定谔的猫 <weiran.zsd@outlook.com>",
   "description": "just one command to build react app.",
-  "main": "./lib/index.js",
+  "main": "./conf/webpack.config.js",
   "bin": {
     "build-react-app": "bin/webpack.js"
   },
   "scripts": {
-    "lint": "eslint bin/*.js *.js",
+    "lint": "eslint bin/*.js conf/*.js",
     "test": "cd example && npm run build"
   },
   "files": [
     "LICENSE",
     "readme.md",
     "bin",
-    "conf",
-    "index.js",
-    "output-config.js"
+    "conf"
   ],
   "dependencies": {
     "common-config-webpack-plugin": "^1.4.0",
